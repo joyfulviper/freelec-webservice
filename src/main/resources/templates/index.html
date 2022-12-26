@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<a href="/oauth2/authorization/google">google login</a>
+<a href="/oauth2/authorization/naver">naver login</a>
+<body>
+<div th:if="${session.user != null}">
+[[${session.email}]] <a href="/logout">logout</a>
+</div>
+</body>
+</html>
