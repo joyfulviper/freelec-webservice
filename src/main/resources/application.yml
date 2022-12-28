@@ -11,8 +11,7 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
-        dialiect:
-          storage_engine=innodb
+          #storage_engine: innodb
   datasource:
     username: root
     password: 1234
